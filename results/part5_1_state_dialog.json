@@ -1,0 +1,40 @@
+[
+  {
+    "message": "Покажи ноутбуки до 80 тысяч",
+    "prev_state": null,
+    "new_state": {
+      "category": "laptop",
+      "max_price": 80000,
+      "sort_by": "price_desc"
+    },
+    "found": 4
+  },
+  {
+    "message": "А сначала дешёвые?",
+    "prev_state": {
+      "category": "laptop",
+      "max_price": 80000,
+      "sort_by": "price_desc"
+    },
+    "new_state": {
+      "category": "laptop",
+      "max_price": 80000,
+      "sort_by": "price_asc"
+    },
+    "found": 4
+  },
+  {
+    "message": "А что есть среди смартфонов?",
+    "prev_state": {
+      "category": "laptop",
+      "max_price": 80000,
+      "sort_by": "price_asc"
+    },
+    "new_state": {
+      "category": "smartphone",
+      "max_price": 80000,
+      "sort_by": "price_asc"
+    },
+    "found": 4
+  }
+]
