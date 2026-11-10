@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Найди ноутбуки дешевле 70 000 рублей",
+    "json": {
+      "category": "laptop",
+      "max_price": 70000,
+      "sort_by": "price_asc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Покажи самые дорогие смартфоны",
+    "json": {
+      "category": "smartphone",
+      "max_price": null,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Хочу посмотреть планшеты",
+    "json": {
+      "category": "tablet",
+      "max_price": null,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Покажи ноутбуки до 50 тысяч",
+    "json": {
+      "category": "laptop",
+      "max_price": 50000,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Найди холодильники",
+    "json": {
+      "category": "other",
+      "max_price": null,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Что-нибудь недорогое для работы, но не телефон",
+    "json": {
+      "category": "laptop",
+      "max_price": 50000,
+      "sort_by": "price_asc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Покажи топовые варианты, но чтобы не слишком дорого",
+    "json": {
+      "category": "other",
+      "max_price": null,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  },
+  {
+    "query": "Что-нибудь до 30 тысяч",
+    "json": {
+      "category": "other",
+      "max_price": 30000,
+      "sort_by": "price_desc"
+    },
+    "valid": true,
+    "error": null
+  }
+]

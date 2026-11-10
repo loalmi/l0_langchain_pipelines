@@ -1,0 +1,108 @@
+[
+  {
+    "query": "Что-нибудь недорогое для работы, но не телефон",
+    "off": {
+      "raw_content": "```json\n{\n  \"category\": \"laptop\",\n  \"max_price\": 50000,\n  \"sort_by\": \"price_asc\"\n}\n```",
+      "raw_time_sec": 1.66,
+      "chain_time_sec": 0.75,
+      "usage_metadata": {
+        "input_tokens": 362,
+        "output_tokens": 41,
+        "total_tokens": 403,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0,
+          "cache_creation": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      },
+      "parsed_json": {
+        "category": "laptop",
+        "max_price": 50000,
+        "sort_by": "price_asc"
+      },
+      "chain_error": null
+    },
+    "on": {
+      "raw_content": "\n\n{\n  \"category\": \"laptop\",\n  \"max_price\": null,\n  \"sort_by\": \"price_asc\"\n}",
+      "raw_time_sec": 3.33,
+      "chain_time_sec": 0.76,
+      "usage_metadata": {
+        "input_tokens": 466,
+        "output_tokens": 443,
+        "total_tokens": 909,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 64,
+          "cache_creation": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 411
+        }
+      },
+      "parsed_json": {
+        "category": "laptop",
+        "max_price": null,
+        "sort_by": "price_asc"
+      },
+      "chain_error": null
+    }
+  },
+  {
+    "query": "Покажи топовые варианты, но чтобы не слишком дорого",
+    "off": {
+      "raw_content": "```json\n{\n  \"category\": \"other\",\n  \"max_price\": null,\n  \"sort_by\": \"price_desc\"\n}\n```",
+      "raw_time_sec": 0.74,
+      "chain_time_sec": 0.82,
+      "usage_metadata": {
+        "input_tokens": 364,
+        "output_tokens": 35,
+        "total_tokens": 399,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0,
+          "cache_creation": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 0
+        }
+      },
+      "parsed_json": {
+        "category": "other",
+        "max_price": null,
+        "sort_by": "price_desc"
+      },
+      "chain_error": null
+    },
+    "on": {
+      "raw_content": "\n\n{\"category\":\"other\",\"max_price\":null,\"sort_by\":\"price_asc\"}",
+      "raw_time_sec": 9.24,
+      "chain_time_sec": 2.24,
+      "usage_metadata": {
+        "input_tokens": 400,
+        "output_tokens": 497,
+        "total_tokens": 897,
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0,
+          "cache_creation": 0
+        },
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 596
+        }
+      },
+      "parsed_json": {
+        "category": "other",
+        "max_price": null,
+        "sort_by": "price_asc"
+      },
+      "chain_error": null
+    }
+  }
+]
