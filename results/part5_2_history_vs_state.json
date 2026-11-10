@@ -1,0 +1,140 @@
+{
+  "dialog_1": {
+    "A_state": [
+      {
+        "msg": "Покажи ноутбуки до 80 тысяч",
+        "state": {
+          "category": "laptop",
+          "max_price": 80000,
+          "sort_by": "price_desc"
+        },
+        "found": 4
+      },
+      {
+        "msg": "А сначала дешёвые?",
+        "state": {
+          "category": "laptop",
+          "max_price": 80000,
+          "sort_by": "price_asc"
+        },
+        "found": 4
+      },
+      {
+        "msg": "А что есть среди смартфонов?",
+        "state": {
+          "category": "smartphone",
+          "max_price": 80000,
+          "sort_by": "price_asc"
+        },
+        "found": 4
+      }
+    ],
+    "B_history": [
+      {
+        "msg": "Покажи ноутбуки до 80 тысяч",
+        "state": {
+          "category": "laptop",
+          "max_price": 80000,
+          "sort_by": "price_desc"
+        },
+        "found": 4,
+        "input_tokens": 423
+      },
+      {
+        "msg": "А сначала дешёвые?",
+        "state": {
+          "category": "laptop",
+          "max_price": 80000,
+          "sort_by": "price_asc"
+        },
+        "found": 4,
+        "input_tokens": 429
+      },
+      {
+        "msg": "А что есть среди смартфонов?",
+        "state": {
+          "category": "smartphone",
+          "max_price": null,
+          "sort_by": "price_asc"
+        },
+        "found": 6,
+        "input_tokens": 440
+      }
+    ],
+    "tokens_A": "см. ниже",
+    "tokens_B": [
+      423,
+      429,
+      440
+    ]
+  },
+  "dialog_2": {
+    "A_state": [
+      {
+        "msg": "Хочу планшет",
+        "state": {
+          "category": "tablet",
+          "max_price": null,
+          "sort_by": "price_desc"
+        },
+        "found": 5
+      },
+      {
+        "msg": "Не дороже 40 тысяч",
+        "state": {
+          "category": "tablet",
+          "max_price": 40000,
+          "sort_by": "price_desc"
+        },
+        "found": 2
+      },
+      {
+        "msg": "А самые дорогие из них?",
+        "state": {
+          "category": "tablet",
+          "max_price": 40000,
+          "sort_by": "price_desc"
+        },
+        "found": 2
+      }
+    ],
+    "B_history": [
+      {
+        "msg": "Хочу планшет",
+        "state": {
+          "category": "tablet",
+          "max_price": null,
+          "sort_by": "price_desc"
+        },
+        "found": 5,
+        "input_tokens": 409
+      },
+      {
+        "msg": "Не дороже 40 тысяч",
+        "state": {
+          "category": "tablet",
+          "max_price": 40000,
+          "sort_by": "price_desc"
+        },
+        "found": 2,
+        "input_tokens": 422
+      },
+      {
+        "msg": "А самые дорогие из них?",
+        "state": {
+          "category": "tablet",
+          "max_price": 40000,
+          "sort_by": "price_desc"
+        },
+        "found": 2,
+        "input_tokens": 431
+      }
+    ],
+    "tokens_A": "см. ниже",
+    "tokens_B": [
+      409,
+      422,
+      431
+    ]
+  }
+}
