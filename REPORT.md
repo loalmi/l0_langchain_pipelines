@@ -78,7 +78,7 @@
 {"time": "2026-11-10T23:26:21", "step": "parse_ok", "category": "laptop", "max_price": 70000}
 {"time": "2026-11-10T23:26:21", "step": "params_validated", "params": {"category": "laptop", "max_price": 70000}}
 {"time": "2026-11-10T23:26:21", "step": "search_done", "found": 3}
-
+```
 ### Часть 5. Уточняющие запросы
 
 #### Задание 5.1. Состояние вне модели
