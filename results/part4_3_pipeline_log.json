@@ -1,0 +1,54 @@
+{
+  "normal_search": [
+    {
+      "time": "2026-11-10T23:15:18",
+      "step": "llm_call_start",
+      "attempt": 1
+    },
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "llm_call_end",
+      "attempt": 1,
+      "elapsed": 1.62,
+      "input_tokens": 365,
+      "output_tokens": 41
+    },
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "parse_ok",
+      "category": "laptop",
+      "max_price": 70000,
+      "sort_by": "price_asc"
+    },
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "params_validated",
+      "params": {
+        "category": "laptop",
+        "max_price": 70000,
+        "sort_by": "price_asc"
+      }
+    },
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "search_done",
+      "found": 3
+    }
+  ],
+  "confirmation_required": [
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "params_validated",
+      "params": {
+        "category": "tablet",
+        "max_price": null,
+        "sort_by": "price_desc"
+      }
+    },
+    {
+      "time": "2026-11-10T23:15:20",
+      "step": "confirmation_required",
+      "reason": "no_max_price"
+    }
+  ]
+}
