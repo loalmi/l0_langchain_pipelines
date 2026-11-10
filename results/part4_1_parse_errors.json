@@ -1,0 +1,23 @@
+[
+  {
+    "case": "1. Синтаксически некорректный JSON",
+    "raw": "{\"category\": \"laptop\", \"max_price\": 70000,}",
+    "exception": "OutputParserException",
+    "cause": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 43 (char 42)",
+    "message": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+  },
+  {
+    "case": "2. Значение не из перечисления",
+    "raw": "{\"category\": \"fridge\", \"max_price\": 50000, \"sort_by\": \"price_asc\"}",
+    "exception": "OutputParserException",
+    "cause": "ValidationError: 1 validation error for ProductQuery\ncategory\n  Input should be 'laptop', 'smartphone', 'tablet' or 'other' [type=literal_error, input_value='fridge', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/literal_error",
+    "message": "Failed to parse ProductQuery from completion {\"category\": \"fridge\", \"max_price\": 50000, \"sort_by\": \"price_asc\"}. Got: 1 validation error for ProductQuery\ncategory\n  Input should be 'laptop', 'smartphone', 'tablet' or 'other' [type=literal_error, input_value='fridge', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/literal_error\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+  },
+  {
+    "case": "3. Неверный тип / нарушение ограничения",
+    "raw": "{\"category\": \"laptop\", \"max_price\": -100, \"sort_by\": \"price_asc\"}",
+    "exception": "OutputParserException",
+    "cause": "ValidationError: 1 validation error for ProductQuery\nmax_price\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v/greater_than_equal",
+    "message": "Failed to parse ProductQuery from completion {\"category\": \"laptop\", \"max_price\": -100, \"sort_by\": \"price_asc\"}. Got: 1 validation error for ProductQuery\nmax_price\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-100, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v/greater_than_equal\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+  }
+]
