@@ -1,0 +1,111 @@
+[
+  {
+    "label": "битый → корректный (retry)",
+    "error": null,
+    "found": 3,
+    "log": [
+      {
+        "time": "2026-11-10T23:27:15",
+        "step": "llm_call_start",
+        "attempt": 1
+      },
+      {
+        "time": "2026-11-10T23:27:15",
+        "step": "llm_call_end",
+        "attempt": 1
+      },
+      {
+        "time": "2026-11-10T23:27:15",
+        "step": "parse_error",
+        "error_type": "OutputParserException",
+        "error": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "llm_call_start",
+        "attempt": 2
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "llm_call_end",
+        "attempt": 2
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "parse_ok",
+        "category": "laptop",
+        "max_price": 70000,
+        "sort_by": "price_asc"
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "params_validated",
+        "params": {
+          "category": "laptop",
+          "max_price": 70000,
+          "sort_by": "price_asc"
+        }
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "search_done",
+        "found": 3
+      }
+    ]
+  },
+  {
+    "label": "три битых подряд (retry)",
+    "error": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ",
+    "found": null,
+    "log": [
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "llm_call_start",
+        "attempt": 1
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "llm_call_end",
+        "attempt": 1
+      },
+      {
+        "time": "2026-11-10T23:27:17",
+        "step": "parse_error",
+        "error_type": "OutputParserException",
+        "error": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+      },
+      {
+        "time": "2026-11-10T23:27:19",
+        "step": "llm_call_start",
+        "attempt": 2
+      },
+      {
+        "time": "2026-11-10T23:27:19",
+        "step": "llm_call_end",
+        "attempt": 2
+      },
+      {
+        "time": "2026-11-10T23:27:19",
+        "step": "parse_error",
+        "error_type": "OutputParserException",
+        "error": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+      },
+      {
+        "time": "2026-11-10T23:27:21",
+        "step": "llm_call_start",
+        "attempt": 3
+      },
+      {
+        "time": "2026-11-10T23:27:21",
+        "step": "llm_call_end",
+        "attempt": 3
+      },
+      {
+        "time": "2026-11-10T23:27:21",
+        "step": "parse_error",
+        "error_type": "OutputParserException",
+        "error": "Invalid json output: {\"category\": \"laptop\", \"max_price\": 70000,}\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE "
+      }
+    ]
+  }
+]
