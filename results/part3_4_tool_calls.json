@@ -1,0 +1,233 @@
+[
+  {
+    "query": "Найди ноутбуки дешевле 70 000 рублей",
+    "content": "",
+    "tool_calls": [
+      {
+        "name": "search_products_tool",
+        "args": {
+          "category": "laptop",
+          "max_price": 70000,
+          "sort_by": "price_asc"
+        },
+        "id": "call_9ccbe9a97b6b4316b1809b00",
+        "type": "tool_call"
+      }
+    ],
+    "executed": [
+      {
+        "query": {
+          "category": "laptop",
+          "max_price": 70000,
+          "sort_by": "price_asc"
+        },
+        "products": [
+          {
+            "id": 1,
+            "name": "Lenovo IdeaPad 3",
+            "category": "laptop",
+            "price": 45000
+          },
+          {
+            "id": 2,
+            "name": "ASUS VivoBook 15",
+            "category": "laptop",
+            "price": 58000
+          },
+          {
+            "id": 3,
+            "name": "Acer Aspire 5",
+            "category": "laptop",
+            "price": 62000
+          }
+        ],
+        "message": null
+      }
+    ]
+  },
+  {
+    "query": "Покажи самые дорогие смартфоны",
+    "content": "",
+    "tool_calls": [
+      {
+        "name": "search_products_tool",
+        "args": {
+          "category": "smartphone",
+          "sort_by": "price_desc"
+        },
+        "id": "call_0a675a5526764926a167a77d",
+        "type": "tool_call"
+      }
+    ],
+    "executed": [
+      {
+        "query": {
+          "category": "smartphone",
+          "max_price": null,
+          "sort_by": "price_desc"
+        },
+        "products": [
+          {
+            "id": 12,
+            "name": "Apple iPhone 15 Pro",
+            "category": "smartphone",
+            "price": 130000
+          },
+          {
+            "id": 11,
+            "name": "Samsung Galaxy S23",
+            "category": "smartphone",
+            "price": 95000
+          },
+          {
+            "id": 10,
+            "name": "Apple iPhone 14",
+            "category": "smartphone",
+            "price": 78000
+          },
+          {
+            "id": 9,
+            "name": "Google Pixel 7a",
+            "category": "smartphone",
+            "price": 45000
+          },
+          {
+            "id": 8,
+            "name": "Samsung Galaxy A54",
+            "category": "smartphone",
+            "price": 32000
+          },
+          {
+            "id": 7,
+            "name": "Xiaomi Redmi Note 12",
+            "category": "smartphone",
+            "price": 18000
+          }
+        ],
+        "message": null
+      }
+    ]
+  },
+  {
+    "query": "Хочу посмотреть планшеты",
+    "content": "",
+    "tool_calls": [
+      {
+        "name": "search_products_tool",
+        "args": {
+          "category": "tablet"
+        },
+        "id": "call_0c9c04a26b6348629e260bc9",
+        "type": "tool_call"
+      }
+    ],
+    "executed": [
+      {
+        "query": {
+          "category": "tablet",
+          "max_price": null,
+          "sort_by": "price_asc"
+        },
+        "products": [
+          {
+            "id": 13,
+            "name": "Lenovo Tab M10",
+            "category": "tablet",
+            "price": 22000
+          },
+          {
+            "id": 14,
+            "name": "Samsung Galaxy Tab A8",
+            "category": "tablet",
+            "price": 30000
+          },
+          {
+            "id": 15,
+            "name": "Xiaomi Pad 6",
+            "category": "tablet",
+            "price": 42000
+          },
+          {
+            "id": 16,
+            "name": "Apple iPad 10",
+            "category": "tablet",
+            "price": 55000
+          },
+          {
+            "id": 17,
+            "name": "Samsung Galaxy Tab S9",
+            "category": "tablet",
+            "price": 85000
+          }
+        ],
+        "message": null
+      }
+    ]
+  },
+  {
+    "query": "Покажи ноутбуки до 50 тысяч",
+    "content": "",
+    "tool_calls": [
+      {
+        "name": "search_products_tool",
+        "args": {
+          "category": "laptop",
+          "max_price": 50000,
+          "sort_by": "price_asc"
+        },
+        "id": "call-08b330b1-9845-4099-88ee-5a90721c32d5",
+        "type": "tool_call"
+      }
+    ],
+    "executed": [
+      {
+        "query": {
+          "category": "laptop",
+          "max_price": 50000,
+          "sort_by": "price_asc"
+        },
+        "products": [
+          {
+            "id": 1,
+            "name": "Lenovo IdeaPad 3",
+            "category": "laptop",
+            "price": 45000
+          }
+        ],
+        "message": null
+      }
+    ]
+  },
+  {
+    "query": "Найди холодильники",
+    "content": "К сожалению, в моём каталоге товаров нет категории «холодильники». Доступны только следующие категории:\n\n- **laptop** (ноутбуки)\n- **smartphone** (смартфоны)\n- **tablet** (планшеты)\n- **other** (прочее)\n\nХолодильники могут находиться в категории **«other»**. Попробую поискать их там:\n\n",
+    "tool_calls": [
+      {
+        "name": "search_products_tool",
+        "args": {
+          "category": "other"
+        },
+        "id": "chatcmpl-tool-a162b8ee980b90b8",
+        "type": "tool_call"
+      }
+    ],
+    "executed": [
+      {
+        "query": {
+          "category": "other",
+          "max_price": null,
+          "sort_by": "price_asc"
+        },
+        "products": [],
+        "message": "Категория не поддерживается."
+      }
+    ]
+  },
+  {
+    "query": "Привет! Как дела?",
+    "content": "Привет! У меня всё отлично, спасибо! 😊\n\nА у вас как дела? Чем могу помочь?",
+    "tool_calls": [],
+    "executed": [],
+    "note": "модель не вызвала инструмент"
+  }
+]

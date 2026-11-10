@@ -1,0 +1,119 @@
+[
+  {
+    "query": "Какие ноутбуки дешевле 70 000 рублей есть в каталоге?",
+    "answer_without_db": "Я не имею доступа к вашему каталогу товаров. Пожалуйста, используйте фильтр по цене в поиске магазина или уточните, какой именно магазин вы имеете в виду.",
+    "answer_with_db": [
+      {
+        "id": 1,
+        "name": "Lenovo IdeaPad 3",
+        "category": "laptop",
+        "price": 45000
+      },
+      {
+        "id": 2,
+        "name": "ASUS VivoBook 15",
+        "category": "laptop",
+        "price": 58000
+      },
+      {
+        "id": 3,
+        "name": "Acer Aspire 5",
+        "category": "laptop",
+        "price": 62000
+      }
+    ],
+    "params": {
+      "category": "laptop",
+      "max_price": 70000,
+      "sort_by": "price_asc"
+    }
+  },
+  {
+    "query": "Какие самые дорогие смартфоны есть в каталоге?",
+    "answer_without_db": "Я не имею доступа к вашему текущему каталогу товаров. Пожалуйста, уточните, какой именно магазин вы имеете в виду, или предоставьте список товаров.",
+    "answer_with_db": [
+      {
+        "id": 12,
+        "name": "Apple iPhone 15 Pro",
+        "category": "smartphone",
+        "price": 130000
+      },
+      {
+        "id": 11,
+        "name": "Samsung Galaxy S23",
+        "category": "smartphone",
+        "price": 95000
+      },
+      {
+        "id": 10,
+        "name": "Apple iPhone 14",
+        "category": "smartphone",
+        "price": 78000
+      },
+      {
+        "id": 9,
+        "name": "Google Pixel 7a",
+        "category": "smartphone",
+        "price": 45000
+      },
+      {
+        "id": 8,
+        "name": "Samsung Galaxy A54",
+        "category": "smartphone",
+        "price": 32000
+      },
+      {
+        "id": 7,
+        "name": "Xiaomi Redmi Note 12",
+        "category": "smartphone",
+        "price": 18000
+      }
+    ],
+    "params": {
+      "category": "smartphone",
+      "max_price": null,
+      "sort_by": "price_desc"
+    }
+  },
+  {
+    "query": "Какие планшеты есть в каталоге?",
+    "answer_without_db": "У меня нет доступа к вашему каталогу товаров. Пожалуйста, уточните, какой именно магазин вы имеете в виду, или предоставьте список доступных моделей.",
+    "answer_with_db": [
+      {
+        "id": 17,
+        "name": "Samsung Galaxy Tab S9",
+        "category": "tablet",
+        "price": 85000
+      },
+      {
+        "id": 16,
+        "name": "Apple iPad 10",
+        "category": "tablet",
+        "price": 55000
+      },
+      {
+        "id": 15,
+        "name": "Xiaomi Pad 6",
+        "category": "tablet",
+        "price": 42000
+      },
+      {
+        "id": 14,
+        "name": "Samsung Galaxy Tab A8",
+        "category": "tablet",
+        "price": 30000
+      },
+      {
+        "id": 13,
+        "name": "Lenovo Tab M10",
+        "category": "tablet",
+        "price": 22000
+      }
+    ],
+    "params": {
+      "category": "tablet",
+      "max_price": null,
+      "sort_by": "price_desc"
+    }
+  }
+]
